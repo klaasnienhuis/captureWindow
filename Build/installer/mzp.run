@@ -1,0 +1,10 @@
+name "INSTALLER captureWindow"
+description "Klaas Nienhuis Scripts"
+version 1.0
+
+copy "PAYLOAD_captureWindow_2013-06-18_10-06-25_1.0.mzp" to "$temp\captureWindow\"
+copy "mzpinstaller.ms" to "$temp\captureWindow\"
+copy "mzpbuilder_captureWindow.ini" to "$temp\captureWindow\"
+copy "readme.txt" to "$temp\captureWindow\"
+drop $temp\captureWindow\mzpinstaller.ms
+run $temp\captureWindow\mzpinstaller.ms

@@ -1,0 +1,13 @@
+name "PAYLOAD captureWindow"
+description "Klaas Nienhuis Scripts"
+version 1.0
+
+copy "scriptfiles\captureWindow.ms" to "$userScripts\KlaasTools\captureWindow\scriptfiles\"
+copy "art\captureWindow_16i.bmp" to "$userIcons\"
+copy "art\captureWindow_24i.bmp" to "$userIcons\"
+copy "art\captureWindow_24i.ico" to "$userIcons\"
+copy "installer\makeMacro.ms" to "$userScripts\KlaasTools\captureWindow\installer\"
+
+run $userScripts\KlaasTools\captureWindow\installer\makeMacro.ms
+
+clear temp on MAX exit
